@@ -1,5 +1,5 @@
 {
-  "name": "styled-native",
+  "name": "@styled-native",
   "main": "./src/index.ts",
   "version": "1.0.0",
   "description": "styled components and theme for react native",
