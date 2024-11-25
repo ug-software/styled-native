@@ -1,4 +1,4 @@
-import { Color } from "@/src/interface/theme"
+import { Color } from "../../theme/index.d"
 
 const green : Color  = {
     "50": "#e8f5e9",

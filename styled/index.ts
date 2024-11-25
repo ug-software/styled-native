@@ -1,23 +1,8 @@
-/* 
-    usage example;
-
-    sample:
-        -> declaration
-            const styles = styled("view")({
-                // css element
-            });
-        
-    props context:
-        -> declaration
-            const styles = styled("view")<{color: string}>(({ color }) => ({
-                // css element
-            }));
-*/
-
-import { callback, component, componentProps, componentStyle } from "./index.d";
-import { useTheme } from "@/src/hooks"; 
 import { useCallback } from "react";
-import { View, Text, Pressable } from "@/src/components";
+import { useTheme } from "../hooks"; 
+import { callback, component, componentProps, componentStyle } from "./index.d";
+import { View, Text, Pressable } from "../components";
+
 
 const Component = <C extends component, P>(type: component, props: componentProps<C, P>) => {
   switch (type) {
@@ -37,7 +22,7 @@ export function styled(C: component) {
     return <P extends object>(css: callback<component, P> | componentStyle<component>) => {  
   
       return (props?: componentProps<component, P>) => {
-        const theme = useTheme(); // Obtém o tema
+        const { handleChangeMode, ...theme } = useTheme(); // Obtém o tema
   
         // Função para recalcular o estilo com base no tema e nas propriedades
         const styleSheet = useCallback<(props?: componentProps<component, P>) => componentStyle<component>>(

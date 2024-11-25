@@ -1,4 +1,5 @@
-import { ImageProps, TextProps, ViewProps } from "react-native";
+import { ImageProps, TextProps, ViewProps, PressableProps } from "react-native";
+import { ReactNode } from "react"
 
 export interface ITextProps extends TextProps {}
 export interface IViewProps extends ViewProps {}

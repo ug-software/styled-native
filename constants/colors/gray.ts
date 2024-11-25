@@ -1,4 +1,4 @@
-import { Color } from "@/src/interface/theme";
+import { Color } from "../../theme/index.d"
 
 const gray : Color  = {
     "500": "#9e9e9e",

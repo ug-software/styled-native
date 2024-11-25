@@ -1,6 +1,6 @@
 {
   "name": "ux-styled-native",
-  "main": "./src/index.ts",
+  "main": "index.ts",
   "version": "1.0.0",
   "description": "styled components and theme for react native",
   "repository": {
