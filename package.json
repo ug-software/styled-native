@@ -1,7 +1,7 @@
 {
   "name": "ux-styled-native",
   "main": "index.ts",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "styled components and theme for react native",
   "repository": {
     "type": "git",
@@ -17,25 +17,12 @@
   },
   "license": "ISC",
   "scripts": {},
-  "jest": {
-    "preset": "jest-expo"
-  },
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.74.5",
-    "react-native-gesture-handler": "~2.16.1",
-    "react-native-reanimated": "~3.10.1",
-    "react-native-safe-area-context": "4.10.5",
-    "react-native-screens": "3.31.1",
-    "react-native-web": "~0.19.10",
-    "react-native-svg": "15.2.0"
+  "peerDependencies": {
+    "react": "latest",
+    "react-native": "latest"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/react": "~18.2.45",
-    "jest": "^29.2.1",
-    "react-native-svg-transformer": "^1.5.0",
-    "typescript": "~5.3.3"
+    "@types/react": "latest",
+    "typescript": "latest"
   }
 }
